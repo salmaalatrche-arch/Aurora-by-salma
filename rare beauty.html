@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AURORA - Rare Beauty</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--  CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
+  <link href="css/style.css" rel="stylesheet">
+  
+  <style>
+      :root {
+      --primary-color:  #feebf2;
+      --secondary-color: #fcbad3;
+      --accent-color: #e21e69;
+      --text-color: #333;
+    }
+    
+    nav.navbar {
+      background-color: var(--primary-color) !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .navbar .nav-link {
+      color: var(--text-color) !important;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+    
+    .navbar .nav-link:hover {
+      color: #000 !important;
+      background-color: var(--secondary-color) !important;
+      border-radius: 5px;
+    }
+    
+    .logo-color, .card-title {
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+    
+    .buy-btn {
+      background-color: var(--primary-color) !important;
+      border-color: var(--accent-color) !important;
+      color: var(--text-color) !important;
+      transition: all 0.3s;
+      font-weight: 500;
+    }
+    
+    .buy-btn:hover {
+      background-color: var(--secondary-color) !important;
+      transform: translateY(-2px);
+    }
+    
+    .section-title {
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    
+    .product-card {
+      border: none;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      margin-bottom: 20px;
+    }
+    
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    
+    .product-card .card-img-top {
+      height: 250px;
+      object-fit: cover;
+      cursor: pointer;
+      transition: opacity 0.3s;
+    }
+    
+    .product-card .card-img-top:hover {
+      opacity: 0.9;
+    }
+    
+    .brand-section {
+      margin-bottom: 50px;
+    }
+    
+    .hero-text {
+      background-color: rgba(243, 221, 228, 0.39);
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 1000px;
+    }
+    
+    footer {
+      background-color: var(--primary-color);
+      padding: 30px 0;
+      margin-top: 50px;
+    }
+    
+    .caption-color {
+    color: #6e0e37;
+    }
+    
+    .caption-color2 {
+    color: #000000;
+    }
+    
+    /*  Lightbox */
+    .lightbox .lb-image {
+      border-radius: 8px;
+    }
+    
+    .lightboxOverlay {
+      background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+    
+    .lightbox .lb-outerContainer {
+      background-color: transparent !important;
+      border-radius: 10px;
+    }
+    
+    .lightbox .lb-nav a.lb-prev, 
+    .lightbox .lb-nav a.lb-next {
+      opacity: 0.8;
+    }
+    
+    .lightbox .lb-nav a.lb-prev:hover, 
+    .lightbox .lb-nav a.lb-next:hover {
+      opacity: 1;
+    }
+    
+    .lightbox .lb-close {
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>') no-repeat center center !important;
+      background-size: 24px 24px !important;
+    }
+  </style>
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="images/aurora logo.jpg" alt="AURORA Logo" class="rounded-pill" style="height: 50px;">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Brands</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="rare beauty.html">Rare beauty</a></li>
+            <li><a class="dropdown-item" href="fenty beauty .html">Fenty beauty</a></li>
+            <li><a class="dropdown-item" href="rhode.html">rhode</a></li>
+            <li><a class="dropdown-item" href="gisou.html">gisou</a></li>
+            <li><a class="dropdown-item" href="kiko.html">kiko milano</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="eye makeup.html">Eye Makeup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="skin care.html">Skin Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="hair care.html">Hair Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="blush.html">Blush</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cart.html"> &#128722;  </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section id="brands" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="logo-color mb-4">Rare Beauty</h2>
+
+    <!-- - Blush -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/hope blush rare.jpg" data-lightbox="rare-beauty" data-title="Hope - Soft Pinch Matte Bouncy Blush">
+            <img class="card-img-top" src="images/hope blush rare.jpg" alt="hope blush">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Hope</h4>
+            <p class="card-text">Soft Pinch Matte Bouncy Blush</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/joy blush 2.jpg" data-lightbox="rare-beauty" data-title="Joy - Soft Pinch Matte Bouncy Blush">
+            <img class="card-img-top" src="images/joy blush 2.jpg" alt="joy blush">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Joy</h4>
+            <p class="card-text">Soft Pinch Matte Bouncy Blush</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/encourage blush rare.jpg" data-lightbox="rare-beauty" data-title="Encourage - Soft Pinch Matte Bouncy Blush">
+            <img class="card-img-top" src="images/encourage blush rare.jpg" alt="encourage blush">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Encourage</h4>
+            <p class="card-text">Soft Pinch Matte Bouncy Blush</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--- Highlighters -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/blossom highlighter1.jpg" data-lightbox="rare-beauty" data-title="Blossom - Healthy & Shiny Look">
+            <img class="card-img-top" src="images/blossom highlighter1.jpg" alt="blossom highlighter">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Blossom</h4>
+            <p class="card-text">Healthy & Shiny Look</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/glow highlighter1.jpg" data-lightbox="rare-beauty" data-title="Glow - Healthy & Shiny Look">
+            <img class="card-img-top" src="images/glow highlighter1.jpg" alt="glow highlighter">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Glow</h4>
+            <p class="card-text">Healthy & Shiny Look</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/shine highlighter1.jpg" data-lightbox="rare-beauty" data-title="Shine - Healthy & Shiny Look">
+            <img class="card-img-top" src="images/shine highlighter1.jpg" alt="shine highlighter">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Shine</h4>
+            <p class="card-text">Healthy & Shiny Look</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--  Mascara & Eyeshadow Sticks -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty mascara1.jpg" data-lightbox="rare-beauty" data-title="Volumizing Mascara - Rare Beauty Perfect Strokes Universal Volumizing Mascara">
+            <img class="card-img-top" src="images/rare beauty mascara1.jpg" alt="rare beauty mascara">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Volumizing Mascara</h4>
+            <p class="card-text">Rare Beauty Perfect Strokes Universal Volumizing Mascara</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty adventure stick1.jpg" data-lightbox="rare-beauty" data-title="Adventure - Rare Beauty Above Weightless Eyeshadow">
+            <img class="card-img-top" src="images/rare beauty adventure stick1.jpg" alt="rare beauty adventure stick">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Adventure</h4>
+            <p class="card-text">Rare Beauty Above Weightless Eyeshadow</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty integrity stick1.jpg" data-lightbox="rare-beauty" data-title="Integrity - Rare Beauty Above Weightless Eyeshadow">
+            <img class="card-img-top" src="images/rare beauty integrity stick1.jpg" alt="rare beauty integrity stick">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Integrity</h4>
+            <p class="card-text">Rare Beauty Above Weightless Eyeshadow</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--  More Eyeshadow Sticks & Eyeliners -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty well being stick1.jpg" data-lightbox="rare-beauty" data-title="Well Being - Rare Beauty Above Weightless Eyeshadow">
+            <img class="card-img-top" src="images/rare beauty well being stick1.jpg" alt="rare beauty well being stick">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Well Being</h4>
+            <p class="card-text">Rare Beauty Above Weightless Eyeshadow</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty cream eye liner1.jpg" data-lightbox="rare-beauty" data-title="Gel Eyeliner - Rare Beauty Perfect Strokes Long Wear Gel Eyeliner">
+            <img class="card-img-top" src="images/rare beauty cream eye liner1.jpg" alt="rare beauty cream eye liner">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Gel Eyeliner</h4>
+            <p class="card-text">Rare Beauty Perfect Strokes Long Wear Gel Eyeliner</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty liquide eye liner1.jpg" data-lightbox="rare-beauty" data-title="Liquid Eyeliner - Rare Beauty Perfect Strokes Long Wear Matte Liquid Eyeliner">
+            <img class="card-img-top" src="images/rare beauty liquide eye liner1.jpg" alt="rare beauty liquid eye liner">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Liquid Eyeliner</h4>
+            <p class="card-text">Rare Beauty Perfect Strokes Long Wear Matte Liquid Eyeliner</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--  - Eye Patches -->
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card product-card">
+          <a href="images/rare beauty eye patches1.jpg" data-lightbox="rare-beauty" data-title="Eye Patches - Hydrating Under Eye Patches">
+            <img class="card-img-top" src="images/rare beauty eye patches1.jpg" alt="rare beauty eye patches">
+          </a>
+          <div class="card-body">
+            <h4 class="card-title">Eye Patches</h4>
+            <p class="card-text">Hydrating Under Eye Patches</p>
+            <a href="#" class="btn buy-btn">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <h2 class="logo-color">AURORA</h2>
+    <p>Beauty for Every Story, Every Shade, Every You</p>
+    <p>&copy; 2023 AURORA. All rights reserved.</p>
+    <p>By salma alatrash</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+<script>
+  //  Lightbox
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'showImageNumberLabel': false,
+    'alwaysShowNavOnTouchDevices': true,
+    'disableScrolling': true,
+    'fitImagesInViewport': true
+  });
+</script>
+
+</body>
+</html>
