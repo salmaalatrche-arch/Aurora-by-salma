@@ -1,0 +1,130 @@
+:root {
+    --primary-color:  #feebf2;
+    --secondary-color: #fcbad3;
+    --accent-color: #e21e69;
+    --text-color: #333;
+}
+
+nav.navbar {
+    background-color: var(--primary-color) !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .nav-link {
+    color: var(--text-color) !important;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.navbar .nav-link:hover {
+    color: #000 !important;
+    background-color: var(--secondary-color) !important;
+    border-radius: 5px;
+}
+
+.logo-color, .card-title {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.buy-btn {
+    background-color: var(--primary-color) !important;
+    border-color: var(--accent-color) !important;
+    color: var(--text-color) !important;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.buy-btn:hover {
+    background-color: var(--secondary-color) !important;
+    transform: translateY(-2px);
+}
+
+.section-title {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.product-card .card-img-top:hover {
+    opacity: 0.9;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+}
+
+.brand-section {
+    margin-bottom: 50px;
+}
+
+.hero-text {
+    background-color: rgba(243, 221, 228, 0.39);
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 1000px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+.caption-color {
+    color: #6e0e37;
+}
+
+.caption-color2 {
+    color: #000000;
+}
+
+/* تخصيص Lightbox */
+.lightbox .lb-image {
+    border-radius: 8px;
+}
+
+.lightboxOverlay {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.lightbox .lb-outerContainer {
+    background-color: transparent !important;
+    border-radius: 10px;
+}
+
+.lightbox .lb-nav a.lb-prev, 
+.lightbox .lb-nav a.lb-next {
+    opacity: 0.8;
+}
+
+.lightbox .lb-nav a.lb-prev:hover, 
+.lightbox .lb-nav a.lb-next:hover {
+    opacity: 1;
+}
+
+.lightbox .lb-close {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>') no-repeat center center !important;
+    background-size: 24px 24px !important;
+}
